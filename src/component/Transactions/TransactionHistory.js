@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 function TransactionHistory({items}) {
   return(
   <table className={s.transactionHistory}>
-  <thead className={s.head}>
-    <tr  >
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+  <thead >
+    <tr className={s.head}>
+      <th className={s.thHead}>Type</th>
+      <th className={s.thHead}>Amount</th>
+      <th className={s.thHead}>Currency</th>
     </tr>
   </thead>
 
