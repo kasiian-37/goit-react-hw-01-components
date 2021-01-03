@@ -1,11 +1,18 @@
 import React from "react";
-import Conteiner from './component/Conteiner/Conteiner';
+
 import Profile from "./component/Profile/Profile";
 import user from './component/Profile/user.json';
+import statisticalData from './component/Statistics/statistical-data.json';
+import Statistics from './component/Statistics/Statistics';
+import FriendList from './component/Friends/FriendList';
+import friends from './component/Friends/friends.json';
+import transaction from './component/Transactions/transactions.json';
+import TransactionHistory from './component/Transactions/TransactionHistory';
+
 
 function App() {
   return (
-   <Conteiner>
+   <div>
       <Profile
   name={user.name}
   tag={user.tag}
@@ -13,8 +20,11 @@ function App() {
   avatar={user.avatar}
   stats={user.stats}
 />
-     
-</Conteiner>
+<Statistics title="Upload stats" stats={statisticalData} />
+<Statistics stats={statisticalData} />
+<FriendList friends={friends}/>
+< TransactionHistory items={transaction}/>
+</div>
   );
 }
 
