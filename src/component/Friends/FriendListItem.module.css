@@ -1,0 +1,36 @@
+.status {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .avatar {
+    margin-right: 20px;
+  }
+  .name {
+    margin: 0;
+    color: gray;
+  }
+  
+  .online {
+    composes: status;
+    background-color: rgb(10, 63, 10);
+  }
+  .offline {
+    composes: status;
+    background-color: rgb(59, 57, 57);
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding: 30px; 
+    background-color: rgb(234, 245, 244); 
+  }
+  .item:hover,
+  .item:focus {
+    box-shadow: 5px 5px 15px 5px rgba(0, 1, 1, 0.4);
+  }
+  .name{
+      font-size: 24px;
+  }
