@@ -1,21 +1,96 @@
-.profile{
-    max-width: 480px;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #ffffff;
-}
-.description{
+.profile {
+    display: flex;
+    align-items: center;
     text-align: center;
-      
-}
-.avatar{
+    flex-direction: column;
+    width: 480px;
+    height: 550px;
+    padding-top: 50px;
+    margin-top:20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(234, 245, 244); 
+    
+  }
+  
+  .profile:hover,
+  .profile:focus {
+    box-shadow: 5px 5px 15px 5px rgba(0, 1, 1, 0.4);
+  }
+  
+  .description {
+    padding: 30px 0 ;
+    color: rgb(9, 9, 10);
+    width: 100%;
+    border-bottom: solid 1px grey;
+    
+  }
+  
+  .avatar {
     border-radius: 100%;
-}
-.stats{
-  display: inline-flex;  
-}
-.label{
+  }
+  
+  .name {
     display: block;
-}
-.quantity{}
+    text-align: center;
+  }
+  
+  .tag {
+    display: block;
+    text-align: center;
+  }
+  
+  
+  .location {
+    display: block;
+    text-align: center;
+  }
+  
+  .stats {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: inherit;
+    color: rgb(98, 98, 100);
+    background-color: rgb(234, 245, 244);
+    
+  }
+  .stats > li {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .stats > li:not(:last-child) {
+    border-right: solid 1px grey;
+  }   
+  .stats > li:hover,
+  .stats > li:focus {
+    
+    background-color: rgb(85, 221, 255);
+  }
+   
+  .label {
+    margin-right: 2px;
+  }
+  .quantity{
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+  }
+  .quantity:not(:last-child) {
+    margin-right: 5px;
+  }
+  span{
+      display: block;
+  }
